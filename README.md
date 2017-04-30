@@ -7,4 +7,8 @@ To make easier for the developers to find the requested example, the repository 
 
 # Disclaimer
 
-All the examples contained into this repository are developed using an Ubuntu Operating System v16.04 LTS with 4Gb of RAM and Processor i7. We can't be responsible for any damage done to your system, which hopefully will not happen.
+All the examples contained into this repository are developed using an Ubuntu Operating System v16.04 LTS with 4Gb of RAM and Processor Intel i7. 
+
+The environment is composed by: Java JVM 1.8.0_121, Apache Maven 3.3.9, git version 2.7.4.
+
+We can't be responsible for any damage done to your system, which hopefully will not happen.
