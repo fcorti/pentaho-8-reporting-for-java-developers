@@ -4,11 +4,11 @@ Pentaho Reporting Web Application
 This web application renders a PRPT file as PDF using the Pentaho Report Engine.
 To compile the project open a terminal, move into this folder and execute the command below.
 
-    git clean install
+    mvn clean install
 
 To package the project open a terminal, move into this folder and execute the command below.
 
-    git package
+    mvn package
 
 To run the project open a terminal, move into this folder and execute the command below.
 
