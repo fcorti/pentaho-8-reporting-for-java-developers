@@ -15,7 +15,7 @@ import org.pentaho.reporting.engine.classic.core.modules.output.pageable.pdf.Pdf
 import org.pentaho.reporting.libraries.resourceloader.Resource;
 import org.pentaho.reporting.libraries.resourceloader.ResourceManager;
  
-public class PentahoServlet extends HttpServlet {
+public class PentahoServlet2 extends HttpServlet {
 
   @Override
   public void init(

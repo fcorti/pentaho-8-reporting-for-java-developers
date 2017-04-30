@@ -5,13 +5,27 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>reporting</servlet-name>
+    <servlet-name>reporting1</servlet-name>
     <servlet-class>
-      com.example.PentahoServlet
+      com.example.PentahoServlet1
     </servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>reporting</servlet-name>
+    <servlet-name>reporting1</servlet-name>
+    <url-pattern>/reporting1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>reporting2</servlet-name>
+    <servlet-class>
+      com.example.PentahoServlet2
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reporting2</servlet-name>
     <url-pattern>/reporting</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>reporting2</servlet-name>
+    <url-pattern>/reporting2</url-pattern>
   </servlet-mapping>
 </web-app>
