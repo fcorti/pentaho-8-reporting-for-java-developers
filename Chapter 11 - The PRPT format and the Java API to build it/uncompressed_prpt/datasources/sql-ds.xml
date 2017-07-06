@@ -1,0 +1,26 @@
+<data:sql-datasource xmlns:data="http://jfreereport.sourceforge.net/namespaces/datasources/sql">
+  <data:config/>
+  <data:connection>
+    <data:driver>org.hsqldb.jdbcDriver</data:driver>
+    <data:url>jdbc:hsqldb:./resources/sampledata/sampledata</data:url>
+    <data:properties>
+      <data:property name="user">pentaho_user</data:property>
+      <data:property name="password">encrypted:430f56404304160d</data:property>
+      <data:property name="::pentaho-reporting::port">1521</data:property>
+      <data:property name="::pentaho-reporting::name">SampleData (Local)</data:property>
+      <data:property name="::pentaho-reporting::database-name"></data:property>
+      <data:property name="::pentaho-reporting::hostname"></data:property>
+      <data:property name="::pentaho-reporting::database-type">GENERIC</data:property>
+    </data:properties>
+  </data:connection>
+  <data:query-definitions>
+    <data:query name="Query 1">
+      <data:static-query>SELECT
+     &quot;PUBLIC&quot;.&quot;ORDERS&quot;.&quot;ORDERNUMBER&quot;,
+     &quot;PUBLIC&quot;.&quot;ORDERS&quot;.&quot;ORDERDATE&quot;,
+     &quot;PUBLIC&quot;.&quot;ORDERS&quot;.&quot;STATUS&quot;
+FROM
+     &quot;PUBLIC&quot;.&quot;ORDERS&quot;</data:static-query>
+    </data:query>
+  </data:query-definitions>
+</data:sql-datasource>

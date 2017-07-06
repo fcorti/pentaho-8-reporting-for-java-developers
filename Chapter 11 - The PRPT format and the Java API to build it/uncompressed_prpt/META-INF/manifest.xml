@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0">
+  <manifest:file-entry manifest:full-path="/" manifest:media-type="application/vnd.pentaho.reporting.classic"/>
+  <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="datadefinition.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="dataschema.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="datasources/compound-ds.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="datasources/sql-ds.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="layout.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="settings.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml"/>
+  <manifest:file-entry manifest:sticky="true" manifest:full-path="translations.properties" manifest:media-type="text/plain"/>
+</manifest:manifest>

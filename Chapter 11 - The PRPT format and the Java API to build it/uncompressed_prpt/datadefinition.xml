@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-definition xmlns="http://reporting.pentaho.org/namespaces/engine/classic/bundle/data/1.0">
+  <parameter-definition>
+  </parameter-definition>
+  <data-source report-query="Query 1" limit="-1" timeout="0" ref="datasources/compound-ds.xml"/>
+</data-definition>
