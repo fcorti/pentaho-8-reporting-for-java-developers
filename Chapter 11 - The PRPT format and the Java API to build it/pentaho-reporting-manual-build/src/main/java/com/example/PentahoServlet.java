@@ -84,7 +84,7 @@ public class PentahoServlet extends HttpServlet
       // Adding a formula expression.
       FormulaExpression formula = new FormulaExpression();
       formula.setName("totalCostPerProduct");
-      formula.setFormula("=[Cost]");
+      formula.setFormula("=[Cost]*[Quantity]");
       report.addExpression(formula);
 
       // Adding the report header and footer.
