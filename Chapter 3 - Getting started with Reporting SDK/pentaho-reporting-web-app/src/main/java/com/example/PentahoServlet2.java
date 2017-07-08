@@ -15,34 +15,43 @@ import org.pentaho.reporting.engine.classic.core.modules.output.pageable.pdf.Pdf
 import org.pentaho.reporting.libraries.resourceloader.Resource;
 import org.pentaho.reporting.libraries.resourceloader.ResourceManager;
 
-public class PentahoServlet2 extends HttpServlet {
+public class PentahoServlet2 extends HttpServlet
+{
 
   @Override
   public void init(
     ServletConfig config) 
-    throws ServletException {
+    throws ServletException 
+  {
+
     super.init(config);
     ClassicEngineBoot.getInstance().start();
+
   }
 
   @Override
   public void doGet(
     HttpServletRequest request, 
     HttpServletResponse response)
-    throws ServletException, IOException {
+    throws ServletException, IOException
+  {
+
     doPost(request, response);
+
   }
  
   @Override
   public void doPost(
     HttpServletRequest request, 
     HttpServletResponse response)
-    throws ServletException, IOException {
+    throws ServletException, IOException
+  {
 
     // Prpt file.
     String reportPath = "file:" + this.getServletContext().getRealPath("WEB-INF/classes/reports/my_first_report.prpt");
 
-    try {
+    try 
+    {
 
       // Resource manager.
       ResourceManager manager = new ResourceManager();
@@ -56,7 +65,9 @@ public class PentahoServlet2 extends HttpServlet {
       response.setContentType("application/pdf");
       PdfReportUtil.createPDF(report, response.getOutputStream());
 
-    } catch (Exception e) {
+    }
+    catch (Exception e)
+    {
         e.printStackTrace();
     }
   }
