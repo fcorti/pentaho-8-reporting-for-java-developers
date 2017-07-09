@@ -1,7 +1,7 @@
 The PRPT format and the Java API to build it
 ===
 
-This folder contains the Pentaho reports developed in Chapter 11 about understanding the PRPT format and the Java API to build it. To edit (and preview) the reports use the Pentaho Report Designer or any other Pentaho Reporting tool able to manage `prpt` files.
+This folder contains the Pentaho reports developed in Chapter 11 about understanding the PRPT format and the Java API to build it. To edit (and preview) the reports use the Pentaho Report Designer or any other Pentaho Reporting tool able to manage `prpt` files. The folder contains also a maven project developing a web application enabling the preview of Pentaho reports.
 
 # Disclaimer
 
