@@ -55,12 +55,14 @@ public class PentahoServlet extends HttpServlet
       // Declaring a report.
       MasterReport report = new MasterReport();
 
+      // Defining the connection provider.
       DriverConnectionProvider provider = new DriverConnectionProvider();
       provider.setDriver("org.hsqldb.jdbcDriver");
       provider.setProperty("user", "pentaho_user");
       provider.setProperty("password", "password");
       provider.setUrl("jdbc:hsqldb:./resources/sampledata/sampledata");
 
+      // Defining the query.
       SQLReportDataFactory dataFactory = new SQLReportDataFactory(provider);
       String sqlQuery = "SELECT PRODUCTNAME, QUANTITYINSTOCK FROM PRODUCTS";
       dataFactory.setQuery("default", sqlQuery);
@@ -79,7 +81,7 @@ public class PentahoServlet extends HttpServlet
       Element nameField = textFactory.createElement(); 
       itemBand.addElement(nameField);
 
-      // Adding a number filed with the total cost of the products.
+      // Adding a number filed with the quantity in stock of the products.
       NumberFieldElementFactory numberFactory = new NumberFieldElementFactory();
       numberFactory.setFieldname("QUANTITYINSTOCK");
       numberFactory.setX(201f);

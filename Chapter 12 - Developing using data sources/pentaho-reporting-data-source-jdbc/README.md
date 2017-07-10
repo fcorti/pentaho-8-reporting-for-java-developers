@@ -1,4 +1,4 @@
-Pentaho Reporting Manual Build
+Pentaho Reporting Data Source JDBC
 ===
 
 This web application renders a Pentaho Report programmatically defined in the Java source code using the Pentaho Report Engine.
