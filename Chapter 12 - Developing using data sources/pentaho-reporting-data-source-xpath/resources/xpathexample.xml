@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pentaho-dataset java.lang.String,java.lang.String,java.lang.Integer?>
+<ExampleResultSet>
+  <Row>
+    <NAME>LibBase</NAME>
+    <DESCRIPTION>Base library containing common functions </DESCRIPTION>
+    <SIZE>113210</SIZE>
+  </Row>
+  <Row>
+    <NAME>LibLoader</NAME>
+    <DESCRIPTION>Loading and caching library</DESCRIPTION>
+    <SIZE>53552</SIZE>
+  </Row>
+</ExampleResultSet>
