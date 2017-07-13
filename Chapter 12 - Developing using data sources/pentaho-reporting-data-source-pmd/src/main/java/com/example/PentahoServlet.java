@@ -15,7 +15,8 @@ import org.pentaho.reporting.engine.classic.core.MasterReport;
 import org.pentaho.reporting.engine.classic.core.elementfactory.NumberFieldElementFactory;
 import org.pentaho.reporting.engine.classic.core.elementfactory.TextFieldElementFactory;
 import org.pentaho.reporting.engine.classic.core.modules.output.pageable.pdf.PdfReportUtil;
-import org.pentaho.reporting.engine.classic.extensions.datasources.xpath.XPathDataFactory;
+import org.pentaho.reporting.engine.classic.extensions.datasources.pmd.PmdConnectionProvider;
+import org.pentaho.reporting.engine.classic.extensions.datasources.pmd.PmdDataFactory;
 
 public class PentahoServlet extends HttpServlet 
 {
@@ -54,10 +55,39 @@ public class PentahoServlet extends HttpServlet
       // Declaring a report.
       MasterReport report = new MasterReport();
 
-      // Load report xpath data.
-      XPathDataFactory factory = new XPathDataFactory();
-      factory.setXqueryDataFile("file:./resources/xpathexample.xml");
-      factory.setQuery("default", "/ExampleResultSet/Row", false);
+      // Loading MQL data source.
+      PmdDataFactory factory = new PmdDataFactory();
+      factory.setConnectionProvider(new PmdConnectionProvider());
+      factory.setXmiFile("resources/metadata.xmi");
+      factory.setDomainId("test");
+      factory.setQuery(
+        "default",
+        "<?xml version='1.0' encoding='UTF-8'?>" + 
+        "<mql>" + 
+          "<domain_id>test</domain_id>" + 
+          "<model_id>BV_ORDERS</model_id>" + 
+          "<options>" + 
+            "<disable_distinct>false</disable_distinct>" + 
+            "<limit>-1</limit>" + 
+          "</options>" + 
+          "<selections>" + 
+            "<selection>" + 
+              "<view>CAT_PRODUCTS</view>" + 
+              "<column>BC_PRODUCTS_PRODUCTNAME</column>" + 
+              "<aggregation>NONE</aggregation>" + 
+            "</selection>" + 
+            "<selection>" + 
+              "<view>CAT_PRODUCTS</view>" + 
+              "<column>BC_PRODUCTS_MSRP</column>" + 
+              "<aggregation>AVERAGE</aggregation>" + 
+            "</selection>" + 
+          "</selections>" + 
+          "<constraints/>" + 
+          "<orders/>" + 
+        "</mql>",
+        null,
+        null);
+
       report.setDataFactory(factory);
 
       // Getting the item band to host the elements.
@@ -65,7 +95,7 @@ public class PentahoServlet extends HttpServlet
 
       // Adding a text field for the product name, added to the item band.
       TextFieldElementFactory textFactory = new TextFieldElementFactory(); 
-      textFactory.setFieldname("NAME");
+      textFactory.setFieldname("BC_PRODUCTS_PRODUCTNAME");
       textFactory.setX(1f);
       textFactory.setY(1f); 
       textFactory.setMinimumWidth(200f);
@@ -75,7 +105,7 @@ public class PentahoServlet extends HttpServlet
 
       // Adding a number filed with the total cost of the products.
       NumberFieldElementFactory numberFactory = new NumberFieldElementFactory();
-      numberFactory.setFieldname("SIZE");
+      numberFactory.setFieldname("BC_PRODUCTS_MSRP");
       numberFactory.setX(201f);
       numberFactory.setY(1f);
       numberFactory.setMinimumWidth(100f);
