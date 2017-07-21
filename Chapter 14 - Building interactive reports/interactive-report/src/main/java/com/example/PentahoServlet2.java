@@ -61,7 +61,7 @@ public class PentahoServlet2 extends HttpServlet
       // Mandatory parameter.
       report.getParameterValues().put("LINE", request.getParameter("line"));
 
-      // Conversion to PDF and rendering.
+      // Conversion to HTML and rendering.
       response.setContentType("text/html");
       HtmlReportUtil.createStreamHTML(report, response.getOutputStream());
 

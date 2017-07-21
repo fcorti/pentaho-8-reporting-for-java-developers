@@ -58,7 +58,7 @@ public class PentahoServlet extends HttpServlet
         MasterReport.class);
       MasterReport report = (MasterReport) res.getResource(); 
 
-      // Conversion to PDF and rendering.
+      // Conversion to HTML and rendering.
       response.setContentType("text/html");
       HtmlReportUtil.createStreamHTML(report, response.getOutputStream());
 
