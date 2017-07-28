@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf><title>My first dashboard</title><description>My first dashboard</description><author>Francesco Corti</author><style>CleanRequire</style><rendererType>bootstrap</rendererType><require>true</require><widget>false</widget><widgetName></widgetName><widgetParameters></widgetParameters></cdf>
