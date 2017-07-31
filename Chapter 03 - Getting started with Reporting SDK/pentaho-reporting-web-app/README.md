@@ -4,7 +4,7 @@ Pentaho Reporting Web Application
 This web application renders a PRPT file as PDF using the Pentaho Report Engine.
 To compile the project open a terminal, move into this folder and execute the command below.
 
-    mvn clean install
+    mvn clean compile
 
 To package the project open a terminal, move into this folder and execute the command below.
 
@@ -24,6 +24,6 @@ Then open a browser and access to the page below for the described examples.
 
 All the examples contained into this repository are developed using an Ubuntu Operating System v16.04 LTS with 4Gb of RAM and Processor Intel i7. 
 
-The environment is composed by: Java JVM 1.8.0_121, Apache Maven 3.3.9, git version 2.7.4.
+The environment is composed by: Java JVM 1.8.0_131, Apache Maven 3.3.9, git version 2.7.4.
 
 We can't be responsible for any damage done to your system, which hopefully will not happen.
