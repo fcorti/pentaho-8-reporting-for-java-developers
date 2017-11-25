@@ -9,8 +9,8 @@
   <url>http://maven.apache.org</url>
   <repositories>
     <repository>
-      <id>pentaho-releases</id>
-      <url>http://repository.pentaho.org/artifactory/repo/</url>
+      <id>pentaho-public</id>
+      <url>http://nexus.pentaho.org/content/groups/omni/</url>
     </repository>
   </repositories>
   <dependencies>
@@ -26,68 +26,68 @@
       <version>3.1.0</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-reporting-engine</groupId>
-      <artifactId>pentaho-reporting-engine-classic-core</artifactId>
+      <groupId>org.pentaho.reporting.engine</groupId>
+      <artifactId>classic-core</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-reporting-engine</groupId>
-      <artifactId>pentaho-reporting-engine-classic-extensions</artifactId>
+      <groupId>org.pentaho.reporting.engine</groupId>
+      <artifactId>classic-extensions</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-reporting-engine</groupId>
-      <artifactId>pentaho-reporting-engine-wizard-core</artifactId>
+      <groupId>org.pentaho.reporting.engine</groupId>
+      <artifactId>wizard-core</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libbase</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libdocbundle</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libfonts</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libformat</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>    
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libformula</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>             
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libloader</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>librepository</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>        
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libserializer</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-library</groupId>
+      <groupId>org.pentaho.reporting.library</groupId>
       <artifactId>libxml</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>pentaho-reporting-engine</groupId>
-      <artifactId>pentaho-reporting-engine-legacy-charts</artifactId>
+      <groupId>org.pentaho.reporting.engine</groupId>
+      <artifactId>legacy-charts</artifactId>
       <version>8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
